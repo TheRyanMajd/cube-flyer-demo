@@ -1,6 +1,6 @@
 var score = 0;
 var scoreText;
-
+var points = 1;
 var createHud = function () {
 	var hudTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
 

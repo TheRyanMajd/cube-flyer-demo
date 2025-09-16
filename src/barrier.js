@@ -30,11 +30,21 @@ class Barrier extends GameObject {
 	}
 
 	update(deltaTime) {
+		const previousLocation = this.location;
 		this.location -= deltaTime * obstacleSpeed;
 
 		// Update the players physics:
 		this.ceilingBox.position.x = this.location;
 		this.floorBox.position.x = this.location;
+
+		// If the barrier crosses the player's x (around 0) from right to left, award points once
+		if (!this.scored && previousLocation > 0 && this.location <= 0) {
+			// addScore is defined in hud.js (global). Use points defined there as well.
+			if (typeof addScore === 'function') {
+				addScore(points);
+			}
+			this.scored = true;
+		}
 
 		if (this.location < -25) {
 			destroyObject(this);
