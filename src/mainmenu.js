@@ -96,7 +96,7 @@ class MainMenu extends GameObject {
 		this.welcomeText.fontSize = 72;
 		this.welcomeText.verticalAlignment = BABYLON.GUI.TextBlock.VERTICAL_ALIGNMENT_TOP;
 		this.welcomeText.horizontalAlignment = BABYLON.GUI.TextBlock.HORIZONTAL_ALIGNMENT_CENTER;
-		this.welcomeText.width = 0.5;
+		this.welcomeText.width = 0.5; // TODO: Fix clipping of title
 		this.welcomeText.height = 0.6;
 		this.welcomeText.paddingBottom = 40;
 

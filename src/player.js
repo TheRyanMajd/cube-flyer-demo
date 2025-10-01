@@ -2,7 +2,7 @@ var gamepadManager = new BABYLON.GamepadManager();
 
 var deviceSourceManager;
 
-const obstacleSpawnInterval = 3.5;
+const obstacleSpawnInterval = 3.5; // TODO: Edit this for difficulty
 
 class Player extends GameObject {
 	constructor() {
@@ -12,7 +12,7 @@ class Player extends GameObject {
 	init() {
 		this.obstacleSpawnTimer = 0;
 		// A Vector2 is a 2 dimensional vector with X and Y dimension - track velocity with this.
-		this.velocity = new BABYLON.Vector3(0, 0);
+		this.velocity = new BABYLON.Vector3(0, 0); 
 		this.setupInputs();
 
 		// Create the player object - a 1 unit square cube
@@ -29,7 +29,7 @@ class Player extends GameObject {
 
 	update(deltaTime) {
 		// Update the players physics:
-		this.velocity.y += gravity.y * deltaTime;
+		this.velocity.y += gravity.y * deltaTime; // TODO: edit this to showcase gravity changes
 		this.capVelocity(20);
 		this.playerMesh.position.y += this.velocity.y * deltaTime;
 		if (this.testGameOver()) {

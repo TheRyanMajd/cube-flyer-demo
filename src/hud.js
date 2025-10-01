@@ -1,4 +1,4 @@
-var score = 0;
+var score = 0 // TODO: change default score Number.
 var scoreText;
 var points = 1;
 var createHud = function () {
@@ -29,7 +29,7 @@ var resetScore = function () {
 	updateScoreText();
 };
 
-var addScore = function (points) {
+var addScore = function (points) { // TODO: Award More points?
 	score += points;
 	updateScoreText();
 };
