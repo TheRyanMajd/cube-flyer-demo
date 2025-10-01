@@ -4,7 +4,7 @@ Hi!
 
 This project is intended to help introduce you to Open Source as part of [MLH 2023 Global Hack Week: GAMES](https://organize.mlh.io/participants/events/9153-global-hack-week-game-week)! It's a JavaScript-based 3D game built with [Babylon.JS](https://github.com/BabylonJS) that lets you fly a Cube through a set of obstacles.
 
-When you create a repository from this template, a series of [Issues](https://docs.github.com/en/issues) will be generated that you can pick up to get started.
+<!--When you create a repository from this template, a series of [Issues](https://docs.github.com/en/issues) will be generated that you can pick up to get started. -->
 
 The entire project can be run by opening [`game/index.html`](game/index.html) in a browser. All of the 3rd party dependencies like Babylon are using a CDN so you do not need Node or a local developer environment.
 
@@ -25,4 +25,5 @@ We've also provided a file that should support launching from VS Code that will 
 This project is intended as a sandbox for you to learn about GitHub and contributing to Open Source.
 
 ## Acknowledgements
-All the code in this repo was written by [Sam Wronski](https://github.com/runewake2).
+All the code in this repo was originally written by [Sam Wronski](https://github.com/runewake2).
+The code has since been modified by [Ryan Majd](http://github.com/theryanmajd/)
